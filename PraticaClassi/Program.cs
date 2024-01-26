@@ -4,50 +4,54 @@ namespace PraticaClassi
 {
     internal class Program
     {
-        static void DoxPerson(Person person)
-        {
+        static string ShowPerson(Person person)
+        {          
             Console.WriteLine("First name: " + person.FirstName);
             Console.WriteLine("Last name: " + person.LastName);
             Console.WriteLine("Age: " + person.Age);
             Console.WriteLine("Job: " + person.Job);
+            
+            string stringedLastname = person.LastName.ToString();
+            return stringedLastname;
         }
 
         static void Main(string[] args)
         {
-            Person steveStevenson = new Person();
-            steveStevenson.FirstName = "Steve";
-            steveStevenson.LastName = "Stevenson";
-            steveStevenson.Age = 32;
-            steveStevenson.Job = "Programmer";
+            Person stevenson = new Person();
+            stevenson.FirstName = "Steve";
+            stevenson.LastName = "Stevenson";
+            stevenson.Age = 32;
+            stevenson.Job = "Programmer";
 
-            Person johnJohnson = new Person();
-            johnJohnson.FirstName = "John";
-            johnJohnson.LastName = "Johnson";
-            johnJohnson.Age = 24;
-            johnJohnson.Job = "Professional thief";
+            Person johnson = new Person();
+            johnson.FirstName = "John";
+            johnson.LastName = "Johnson";
+            johnson.Age = 24;
+            johnson.Job = "Professional thief";
 
-            Person mariannaRossi = new Person();
-            mariannaRossi.FirstName = "Marianna";
-            mariannaRossi.LastName = "Rossi";
-            mariannaRossi.Age = 19;
-            mariannaRossi.Job = "Serial killer";
+            Person rossi = new Person();
+            rossi.FirstName = "Marianna";
+            rossi.LastName = "Rossi";
+            rossi.Age = 19;
+            rossi.Job = "Serial killer";
 
-            Person ermannoErmannini = new Person();
-            ermannoErmannini.FirstName = "Ermanno";
-            ermannoErmannini.LastName = "Ermannini";
-            ermannoErmannini.Age = 56;
-            ermannoErmannini.Job = "God";
+            Person ermannini = new Person();
+            ermannini.FirstName = "Ermanno";
+            ermannini.LastName = "Ermannini";
+            ermannini.Age = 56;
+            ermannini.Job = "God";
 
-            Person andrewMowlinars = new Person();
-            andrewMowlinars.FirstName = "Andrew";
-            andrewMowlinars.LastName = "Mowlinars";
-            andrewMowlinars.Age = 29;
-            andrewMowlinars.Job = "Cutscene watcher";
+            Person mowlinars = new Person();
+            mowlinars.FirstName = "Andrew";
+            mowlinars.LastName = "Mowlinars";
+            mowlinars.Age = 29;
+            mowlinars.Job = "Cutscene watcher";
 
             //Person[] people = [ steveStevenson, andrewMowlinars, ermannoErmannini, mariannaRossi, johnJohnson ];
 
             Console.WriteLine("Insert the last name of the person you want to doxx");
-            Console.WriteLine(Person.Equals(steveStevenson.Job, mariannaRossi.Job));
+            //DoxPerson()
+            Console.ReadLine();
             
         }
 

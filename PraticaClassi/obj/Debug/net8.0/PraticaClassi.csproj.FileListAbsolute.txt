@@ -12,3 +12,4 @@ C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\re
 C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.pdb
 C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.genruntimeconfig.cache
 C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\ref\PraticaClassi.dll
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.sourcelink.json
