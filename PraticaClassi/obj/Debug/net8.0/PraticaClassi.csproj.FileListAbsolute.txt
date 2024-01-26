@@ -1,0 +1,14 @@
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\bin\Debug\net8.0\PraticaClassi.exe
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\bin\Debug\net8.0\PraticaClassi.deps.json
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\bin\Debug\net8.0\PraticaClassi.runtimeconfig.json
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\bin\Debug\net8.0\PraticaClassi.dll
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\bin\Debug\net8.0\PraticaClassi.pdb
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.AssemblyInfoInputs.cache
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.AssemblyInfo.cs
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.csproj.CoreCompileInputs.cache
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.dll
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\refint\PraticaClassi.dll
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.pdb
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.genruntimeconfig.cache
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\ref\PraticaClassi.dll
