@@ -1,5 +1,8 @@
 ﻿using PraticaClassi.Models;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Versioning;
 
 namespace PraticaClassi
 {
@@ -8,6 +11,11 @@ namespace PraticaClassi
         static void ShowPerson(Person person)
         {
             Console.WriteLine("First name: " + person.FirstName + "\nLast name: " + person.LastName + "\nAge: " + person.Age + "\nJob: " + person.Job);
+        }
+
+        static void ShowAltPerson(AltPerson altPerson)
+        {
+            Console.WriteLine("First name: " + altPerson.FirstName + "\nLast name: " + altPerson.LastName + "\nGender: " + altPerson.Gender + "\nEmail address: " + altPerson.EmailAddress);
         }
 
         static Person CreatePerson()
@@ -30,33 +38,65 @@ namespace PraticaClassi
             {
                 createdPerson.Age = parsedAge;
 
-            } else
+            }
+            else
             {
                 Console.WriteLine("Please insert a valid age");
-               
+                //mettere un while che controlla se è un numero e sennò cicla finché non lo è
             }
             return createdPerson;
         }
         static void Main(string[] args)
         {
             List<Person> people = new List<Person>();
-            Console.WriteLine("How many people do you want to add?");
+            //Console.WriteLine("How many people do you want to add?");
             //string numberOfPeople = Console.ReadLine()!;
             //int convertedNumber = Convert.ToInt32(numberOfPeople);
-            for (int i = 0; i < 3; i++)
-            {
-                people.Add(CreatePerson());
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    people.Add(CreatePerson());
 
+            //}
+            //Console.WriteLine("Insert the last name of the person you want to doxx");
+            //string input = Console.ReadLine()!;
+            //Person foundPerson = null;
+            //foreach (var person in people)
+            //{
+            //    if (person.LastName.ToLower() == input.ToLower())
+            //    {
+            //        foundPerson = person;
+            //        ShowPerson(foundPerson);
+            //        break;
+            //    };
+            //}
+            //if (foundPerson == null)
+            //{
+            //    Console.WriteLine("No such person exists");
+            //}
+            string path = "C:\\Users\\fiumicelli\\source\\repos\\PraticaClassi\\PraticaClassi\\MOCK_DATA.csv";
+            //string path = ".\\MOCK_DATA.csv";
+            List<AltPerson> altPeople = new List<AltPerson>();
+            string[] stringArray = File.ReadAllLines(path);
+            for (int i = 1; i < stringArray.Length; i++)
+            {
+                string[] arrayDiStringhine = stringArray[i].Split(',');
+                AltPerson createdPerson = new AltPerson();
+                createdPerson.FirstName = arrayDiStringhine[1];
+                createdPerson.LastName = arrayDiStringhine[2];
+                createdPerson.EmailAddress = arrayDiStringhine[3];
+                createdPerson.Gender = arrayDiStringhine[4];
+                Console.WriteLine("First name: " + createdPerson.FirstName + "\nLast name: " + createdPerson.LastName + "\nGender: " + createdPerson.Gender + "\nEmail address: " + createdPerson.EmailAddress);
+                altPeople.Add(createdPerson);
             }
             Console.WriteLine("Insert the last name of the person you want to doxx");
             string input = Console.ReadLine()!;
-            Person foundPerson = null;
-            foreach (var person in people)
+            AltPerson foundPerson = null;
+            foreach (var person in altPeople)
             {
                 if (person.LastName.ToLower() == input.ToLower())
                 {
                     foundPerson = person;
-                    ShowPerson(foundPerson);
+                    ShowAltPerson(foundPerson);
                     break;
                 };
             }
