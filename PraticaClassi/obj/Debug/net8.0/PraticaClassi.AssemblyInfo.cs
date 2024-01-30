@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PraticaClassi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe3cebd239513eaa54c290167fa5bdaf7e2fdee6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9514ddc2728235c3b55dc7f302d5953bd3531fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("PraticaClassi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PraticaClassi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,3 +13,4 @@ C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\Pr
 C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.genruntimeconfig.cache
 C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\ref\PraticaClassi.dll
 C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\obj\Debug\net8.0\PraticaClassi.sourcelink.json
+C:\Users\fiumicelli\source\repos\PraticaClassi\PraticaClassi\bin\Debug\net8.0\MOCK_DATA.csv
