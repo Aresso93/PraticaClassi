@@ -9,7 +9,7 @@ namespace PraticaClassi
 {
     internal class Program
     {
-        static void ShowAltPerson(AltPerson person)
+        private static void ShowAltPerson(AltPerson person)
         {
             Console.WriteLine("First name: " + person?.FirstName +
                 "\nLast name: " + person?.LastName +
@@ -19,8 +19,7 @@ namespace PraticaClassi
                 "\n----------------------------------------"
                 );
         }
-
-        static int CountResults(AltPerson[] altPeople, string str)
+        private static int CountResults(AltPerson[] altPeople, string str)
         {
             int count = 0;
             foreach (var person in altPeople)
@@ -41,7 +40,6 @@ namespace PraticaClassi
             string path = "C:\\Users\\fiumicelli\\source\\repos\\PraticaClassi\\PraticaClassi\\bin\\Debug\\net8.0\\MOCK_DATA.csv";
             string[] stringArray = File.ReadAllLines(path);
             AltPerson[] altPeople = new AltPerson[stringArray.Length];
-            
             for (int i = 1; i < stringArray.Length; i++)
             {
                 string[] arrayDiStringhine = stringArray[i].Split(',');
@@ -58,34 +56,27 @@ namespace PraticaClassi
             AltPerson foundPerson = null;
             int arrayLength = CountResults(altPeople, input);
             AltPerson[] filteredAltPeople = new AltPerson[arrayLength];
-            AltPerson[] nonFilteredPeople = new AltPerson[altPeople.Length - arrayLength -1];
-            Console.WriteLine(filteredAltPeople.Length);
-            Console.WriteLine(nonFilteredPeople.Length);
+            AltPerson[] nonFilteredPeople = new AltPerson[altPeople.Length - arrayLength - 1];
             int indexResult = 0;
             int indexNonResult = 0;
             for (int i = 0; i < altPeople.Length; i++)
-                
             {
                 AltPerson person = altPeople[i];
-                if (person?.LastName.ToLower() == input.ToLower() 
-                    || person?.FirstName.ToLower() == input.ToLower() 
-                    || person?.Gender.ToLower() == input.ToLower() 
+                if (person?.LastName.ToLower() == input.ToLower()
+                    || person?.FirstName.ToLower() == input.ToLower()
+                    || person?.Gender.ToLower() == input.ToLower()
                     || person?.EmailAddress.ToLower() == input.ToLower())
                 {
                     foundPerson = person;
-                    //ShowAltPerson(foundPerson);
                     filteredAltPeople[indexResult] = person;
                     indexResult++;
-
-
-                } 
+                }
                 else
                 {
                     nonFilteredPeople[indexNonResult] = altPeople[i];
-                    //indexNonResult++;
                 }
             }
-            Console.WriteLine("Lunghezzine" + filteredAltPeople.Length + nonFilteredPeople.Length);
+
             if (foundPerson == null)
             {
                 Console.WriteLine("No such person exists");
@@ -93,7 +84,7 @@ namespace PraticaClassi
 
             for (int i = 0; i < filteredAltPeople.Length; i++)
             {
-                for (int j = i+1; j < filteredAltPeople.Length; j++)
+                for (int j = i + 1; j < filteredAltPeople.Length; j++)
                 {
                     if (string.Compare(filteredAltPeople[i]?.LastName, filteredAltPeople[j]?.LastName) != -1)
                     {
@@ -102,7 +93,7 @@ namespace PraticaClassi
                         filteredAltPeople[i] = filteredPerson;
                     }
                 }
-                ShowAltPerson(filteredAltPeople[i]);             
+                ShowAltPerson(filteredAltPeople[i]);
             }
         }
     }
